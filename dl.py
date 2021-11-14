@@ -75,7 +75,7 @@ async def dl(bvid, fn, cre=None, session=None):
         # 音频轨链接
         audio_url = url["dash"]["audio"][0]['baseUrl']
     except Exception as e:
-        prnit(fn, e)
+        print(fn, e)
         counter += 1
         # print('下载进度：', counter, '/', tot)
         return
